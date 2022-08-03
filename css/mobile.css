@@ -1,0 +1,346 @@
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*banner*/
+  #banner {
+    position: relative;
+  }
+  #banner h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f7f7f7;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  #banner span {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+  .banner-img {
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+  }
+
+  .banner-img img {
+    width: 100%;
+    filter: brightness(50%);
+  }
+
+  /*Nav-bar */
+  .nav-child--name {
+    display: none;
+  }
+  #nav-bar .container {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    display: block;
+    align-items: center;
+    justify-items: center;
+    padding: 12px 12px;
+    gap: 16px;
+  }
+  .nav-child {
+    display: flex;
+    font-size: 12px;
+    gap: 8px;
+    align-items: center;
+    justify-items: center;
+    text-transform: uppercase;
+    border-left: 0.5px solid #343a405d;
+    padding: 0 12px;
+    height: 100%;
+    text-decoration: none;
+  }
+  /*Mục tiêu nghề nghiệp, thông tin cá nhân*/
+  #about .container {
+    display: grid;
+    width: auto;
+    height: fit-content;
+    padding: 0 12px;
+  }
+  #target {
+    width: 100%;
+    padding-top: 24px;
+    padding-left: 0;
+  }
+  #personal-info {
+    width: 100%;
+    padding-top: 24px;
+    background-color: #eaeff1ef;
+    padding-left: 0px;
+  }
+
+  .mt-40-info {
+    list-style: none;
+    line-height: 1.5;
+    padding: 0;
+  }
+  .icon {
+    display: flex;
+    gap: 12px;
+    padding-top: 12px;
+    cursor: pointer;
+    height: fit-content;
+  }
+  /*Kinh nghiệm, sở thích, học vấn, hoạt động*/
+  #job-info {
+    padding-top: 44px;
+  }
+  #job-info .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    grid-template-rows: auto;
+    padding: 0 12px;
+  }
+
+  .content-big {
+    padding-top: 24px;
+    border: 1px solid rgb(231, 238, 239);
+  }
+  .skill-content-big {
+    padding-top: 24px;
+    border: 1px solid rgb(231, 238, 239);
+  }
+
+  .content {
+    display: grid;
+    grid-template-rows: auto auto;
+    list-style: inside;
+    padding-bottom: 12px;
+    padding-top: 24px;
+  }
+  .content-title {
+    /*display: grid;
+    grid-template-columns: 75% 25%;*/
+    display: flex;
+    gap: 64px;
+    padding-left: 24px;
+  }
+  .content-title i {
+    font-size: 36px;
+  }
+
+  .content-title h1 {
+    font-size: 1.5rem;
+  }
+  .content-content {
+    padding-left: 24px;
+  }
+
+  .content-content ul {
+    padding-left: 0;
+  }
+  .content-works {
+    list-style: none;
+    padding-left: 20px;
+  }
+  .content-works li {
+    margin: 0 0 6px 0;
+  }
+  .content-time {
+    display: flex;
+    font-style: italic;
+    padding-left: 20px;
+  }
+  .hientai {
+    background-color: #087f5b;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .interest,
+  .lang-content,
+  .skill-content {
+    padding-left: 24px;
+  }
+
+  /* chứng chỉ , giải thưởng*/
+  .certificate-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    padding: 12px;
+    margin: 0;
+  }
+
+  #certificate {
+    margin-top: 24px;
+  }
+
+  .certificate-layout-el1,
+  .certificate-layout-el2,
+  .certificate-layout-el3 {
+    display: grid;
+    gap: 12px;
+    padding-bottom: 24px;
+    width: 100%;
+  }
+  .certificate-layout-el1 img,
+  .certificate-layout-el2 img,
+  .certificate-layout-el3 img {
+    padding-left: 0px;
+    width: 100%;
+  }
+  .certificate-layout-el1 {
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  .certificate-layout-el2 {
+    padding-left: 0px;
+  }
+
+  .certificate-layout-el3 {
+    padding-top: 24px;
+  }
+
+  #certificate .section-title {
+    padding-left: 12px;
+  }
+  .certificate-text {
+    display: grid;
+    padding-left: 0;
+    gap: 0;
+  }
+  .certificate-text ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 0;
+  }
+  .certificate-text p {
+    font-size: 18px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  /*Dự án*/
+  #project {
+    padding: 24px 12px;
+    position: relative;
+  }
+
+  .project-colums {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .colums {
+    height: 1fr;
+  }
+
+  .project-colums img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-name {
+    border: 1px solid rgb(231, 238, 239);
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+  .project-name span {
+    padding-left: 12px;
+  }
+  .project-project {
+    display: grid;
+    gap: 0px;
+    padding-left: 12px;
+    border: 1px solid rgb(231, 238, 239);
+    height: fit-content;
+    align-items: center;
+  }
+  .project-project span {
+    width: fit-content;
+  }
+  .P-child {
+    display: flex;
+    gap: 12px;
+  }
+
+  table {
+    border: 1px solid rgb(231, 238, 239);
+    border-collapse: collapse;
+    text-align: left;
+  }
+  tr {
+    border: 1px solid rgb(231, 238, 239);
+  }
+  td {
+    padding: 12px 12px;
+  }
+  .firt-td {
+    width: 30%;
+  }
+
+  .project-project span {
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #087f5b;
+    color: #fff;
+  }
+
+  /*footer*/
+  #footer {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .footer-icon {
+    display: flex;
+    margin: 0 auto;
+    gap: 12px;
+    align-items: center;
+    justify-items: center;
+  }
+  .footer-icon p {
+    margin: 0;
+  }
+  #footer ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+  }
+  #footer .container {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .icon-facebook-circled,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    font-size: 32px;
+    color: #087f5b;
+    cursor: pointer;
+  }
+  #footer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+} ;
